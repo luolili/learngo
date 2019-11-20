@@ -23,6 +23,8 @@ func grade(score int) string {
 	return re
 
 }
+
+//不能有括号
 func main() {
 	const filename = "abc.txt"
 	contents, err := ioutil.ReadFile(filename) //返回了文本和错误信息
