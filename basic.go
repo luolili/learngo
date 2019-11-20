@@ -44,6 +44,7 @@ func main() {
 func euler() {
 	/*c:=3+4i
 	fmt.Println(cmplx.Abs(c))*/
+	//cmplx :数学里面的复数，浮点数的标准 就说明了他的不准确，任何语言遵循了这个标准都是imprecise
 	c := cmplx.Pow(math.E, 1i*math.Pi) + 1
 	fmt.Println(c)
 
