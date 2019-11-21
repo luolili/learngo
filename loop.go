@@ -15,15 +15,26 @@ func convertToBin(n int) string {
 	return result
 }
 
-//死循环，用处多
+//死循环，用处多，没有while
 func forever() {
 	for {
 		fmt.Println(11)
 	}
 
 }
+
+func sum(nums ...int) int {
+
+	s := 0
+	for i := range nums {
+		s += nums[i]
+	}
+	return s
+}
 func main() {
 
 	fmt.Println(convertToBin(5))
-	forever()
+	//forever()
+	// 可变 参数
+	fmt.Println(sum(1, 2, 3))
 }
