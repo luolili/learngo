@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 /**
-map
+map:
+slice,map,func 不可作为key
 */
 func main() {
 	m := map[string]string{
