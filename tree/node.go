@@ -1,27 +1,18 @@
-package main
+package tree
 
 import "fmt"
 
-type treeNode struct {
-	value       int
-	left, right *treeNode
+type Node struct {
+	Value       int
+	Left, Right *Node
+}
+
+//给struct添加方法 (node treeNode) 方法所属 的对象
+func (node Node) Print() {
+	fmt.Println(node.Value)
 }
 
 //工厂函数
-func createNode(value int) *treeNode {
-	return &treeNode{value: value}
-}
-func main() {
-	var root treeNode
-	fmt.Println(root)
-	root.left = &treeNode{} //没有构造方法
-	root.right = &treeNode{5, nil, nil}
-	root.right.left = new(treeNode)
-
-	nodes := []treeNode{
-		{value: 2},
-		{},
-		{6, nil, &root}, //必须加 ，
-	}
-	fmt.Println(nodes)
+func CreateNode(value int) *Node {
+	return &Node{Value: value}
 }
