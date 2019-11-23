@@ -23,4 +23,5 @@ func main() {
 	fmt.Println(noRepeat("adcdwec"))
 	fmt.Println(noRepeat("abcde"))
 	fmt.Println(noRepeat("  "))
+	fmt.Println(noRepeat("这是  ")) //不支持中文
 }
