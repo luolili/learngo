@@ -34,4 +34,13 @@ func main() {
 	fmt.Println("s2:", s4)          //可以往后扩展，不可往前扩展
 	fmt.Println("s4 cap:", cap(s4)) //2-6
 	fmt.Println("len:", len(s4))
+	//向arr添加元素超过 cap的时候，会重新生成一个新的数组
+	s5 := append(s3, 10)
+	fmt.Println("now arr:", arr2)
+	s6 := append(s5, 11)
+	fmt.Println("now arr:", arr2)
+	s7 := append(s6, 12)
+	fmt.Println("now arr:", arr2)
+	fmt.Println("s5,s6,s7:", s5, s6, s7)
+
 }
