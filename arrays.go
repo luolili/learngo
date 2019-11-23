@@ -9,7 +9,7 @@ func main() {
 
 	var arr1 [5]int
 	arr2 := [3]int{1, 2, 9}
-	arr3 := [...]int{1, 2, 9}
+	arr3 := [...]int{1, 2, 9, 0}
 	fmt.Println(arr1, arr2, arr3)
 	fmt.Println("--", len(arr2))
 
