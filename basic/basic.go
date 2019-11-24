@@ -1,4 +1,4 @@
-package basic
+package main
 
 import (
 	"fmt"
@@ -38,13 +38,16 @@ func euler() {
 }
 
 func triangle() {
-	var a, b int = 3, 4
+	var a, b = 3, 4
+	fmt.Println(calcTriangle(a, b))
+}
+func calcTriangle(a, b int) int {
 	var c int
 	//只有强制的类型转换
 	c = int(math.Sqrt(float64(a*a + b*b)))
-	fmt.Println(c)
-}
+	return c
 
+}
 func consts() {
 	const filename = "ad"
 	const a, b = 3, 4 //没有指定类型，他就是个文本值
