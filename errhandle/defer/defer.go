@@ -11,6 +11,7 @@ func tryDefer() {
 
 }
 
+//能想到的用error
 func tryRecover() {
 
 	defer func() {
